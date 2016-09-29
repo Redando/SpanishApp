@@ -18,16 +18,16 @@ public class FamilyActivity extends AppCompatActivity{
 
         //Create arraylist of numbers
         ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("Chris","Cris"));
-        words.add(new Word("Eddy","Remolino"));
-        words.add(new Word("George","Jorge"));
-        words.add(new Word("Glen","La Cañada"));
-        words.add(new Word("John","Juan"));
-        words.add(new Word("Joseph","José"));
-        words.add(new Word("Michael","Miguel"));
-        words.add(new Word("Paul","Pablo"));
-        words.add(new Word("Richard","Ricardo"));
-        words.add(new Word("William","Guillermo"));
+        words.add(new Word("Chris","Cris",R.drawable.family_chris));
+        words.add(new Word("Eddy","Remolino",R.drawable.family_eddy));
+        words.add(new Word("George","Jorge",R.drawable.family_george));
+        words.add(new Word("Glen","La Cañada",R.drawable.family_glen));
+        words.add(new Word("John","Juan",R.drawable.family_john));
+        words.add(new Word("Joseph","José",R.drawable.family_joseph));
+        words.add(new Word("Michael","Miguel",R.drawable.family_michael));
+        words.add(new Word("Paul","Pablo",R.drawable.family_pablo));
+        words.add(new Word("Richard","Ricardo",R.drawable.family_richard));
+        words.add(new Word("William","Guillermo",R.drawable.family_william));
 
 
         WordAdapter adapter = new WordAdapter(this, words);

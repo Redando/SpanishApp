@@ -18,7 +18,7 @@ public class PhrasesActivity extends AppCompatActivity {
 
         //Create arraylist of numbers
         ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("What is your name?","51.	¿Cuál es su nombre?"));
+        words.add(new Word("What is your name?","¿Cuál es su nombre?"));
         words.add(new Word("My Name Is","Mi nombre es"));
         words.add(new Word("I Love You","Te amo"));
         words.add(new Word("How are you feeling?","¿Como te sientes?"));
@@ -27,7 +27,7 @@ public class PhrasesActivity extends AppCompatActivity {
         words.add(new Word("Do you like it here?","¿Te gusta aquí?"));
         words.add(new Word("Where are you going?","¿A dónde vas?"));
         words.add(new Word("What time are you coming?","¿A que hora vienes?"));
-        words.add(new Word("I’m feeling good","55.	Me siento bien"));
+        words.add(new Word("I’m feeling good","Me siento bien"));
 
 
         WordAdapter adapter = new WordAdapter(this, words);
