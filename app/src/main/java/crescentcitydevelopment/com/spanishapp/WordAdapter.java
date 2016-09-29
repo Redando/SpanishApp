@@ -1,6 +1,7 @@
 package crescentcitydevelopment.com.spanishapp;
 
 import android.app.Activity;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,12 +17,15 @@ import java.util.ArrayList;
 
 public class WordAdapter extends ArrayAdapter<Word> {
 
+    //Resource ID for background color
+    private int mColorResourceId;
 
     //Customer constructor where context inflates layout file
-    public WordAdapter(Activity context, ArrayList<Word> words)
+    public WordAdapter(Activity context, ArrayList<Word> words, int colorResourceId)
     {
         //Initialize  the ArrayAdapter's internal for the context and the list
         super(context, 0, words);
+        mColorResourceId = colorResourceId;
     }
 
     @Override
@@ -58,6 +62,13 @@ public class WordAdapter extends ArrayAdapter<Word> {
         else{
             iconImageView.setVisibility(View.GONE);
         }
+
+        //Set the theme color for the list item
+        View textContainer = listItemView.findViewById(R.id.text_container);
+        //Find the color that the resource ID maps to
+        int color = ContextCompat.getColor(getContext(), mColorResourceId);
+        //Set the background of the text container View
+        textContainer.setBackgroundColor(color);
 
 
         //Return list item layout to display

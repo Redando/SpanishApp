@@ -30,7 +30,7 @@ public class PhrasesActivity extends AppCompatActivity {
         words.add(new Word("I’m feeling good","Me siento bien"));
 
 
-        WordAdapter adapter = new WordAdapter(this, words);
+        WordAdapter adapter = new WordAdapter(this, words, R.color.category_phrases);
 
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(adapter);
